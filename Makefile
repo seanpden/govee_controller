@@ -1,8 +1,9 @@
 compile:
-	go build -C cmd/ -o ../build/main
+	go build -C govee/ -o ../build/govee_controller
 
 run: compile 
-	./build/main
+	./build/govee_controller
 
 clean:
-	rm build/main
+	rm build/govee_controller
+
